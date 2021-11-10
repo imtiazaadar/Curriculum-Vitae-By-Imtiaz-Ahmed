@@ -1,0 +1,818 @@
+*{
+    margin: 0 120px;
+}
+body{
+    min-width: 715px;
+    background-color: #330538ec;
+}
+.container{
+    height: 1150px;
+    width: 800px;
+    box-sizing: border-box;
+    background-color: #E6E6E6;
+    position: relative;
+}
+
+/* PROFILE */
+
+.profile-div{
+    margin: 0px;
+    height: 1150px;
+    width: 250px;
+    box-sizing: border-box;
+    background-color: rgb(189, 189, 189);
+    position: absolute;
+}
+.logo-pic{
+    height: 152px;
+    width: 150px;
+    filter: brightness(140%);
+    margin: 40px 40px 40px 48px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    position: absolute;
+}
+.intro-name{
+    margin: 220px 0 0 37px ;
+    width: 500px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.intro-name:hover{
+    color: #D12525;
+    cursor: grab;
+}
+.profile{
+    margin: 28px 0 0 58px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile:hover{
+    color: rgb(189, 189, 189);
+    background-color: black;
+    cursor: grab;
+}
+.profile-bio{
+    margin: 30px 39px;
+    text-align: center;
+    width: 170px;
+    font-size: 1.1rem;
+    font-family: 'Patrick Hand', cursive;
+}
+.profile-bio:hover{
+    color: #D12525;
+    cursor: grab;
+}
+
+/* SKILLS */
+
+.skills{
+    margin: 50px 0 0 58px;
+    padding: 10px 15px;
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.skills:hover{
+    color: rgb(189, 189, 189);
+    background-color: black;
+    cursor: grab;
+}
+.programming{
+    margin: 28px 0 0 -135px;
+    font-size: 1rem;
+    width: 220px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+}
+.writing{
+    margin: 40px 0 0 -135px;
+    font-size: 1rem;
+    width: 220px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+}
+.chess{
+    margin: 40px 0 0 -135px;
+    font-size: 1rem;
+    width: 200px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+}
+.typing{
+    margin: 40px 0 0 -135px;
+    font-size: 1rem;
+    width: 200px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+}
+.rubiks{
+    margin: 40px 0 0 -135px;
+    font-size: 1rem;
+    width: 200px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.contact{
+    margin: 90px 0 0 58px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact:hover{
+    color: rgb(189, 189, 189);
+    background-color: black;
+    cursor: grab;
+}
+.call-logo{
+    height: 20px;
+    width: 20px;
+    margin: 45px 0 0 -100px;
+}
+.call-link{
+    margin: 45px 100px 0 20px;
+    width: 200px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-weight: 500;
+    position: absolute;
+}
+.call-link:hover{
+    color: #D12525;
+}
+.web-logo{
+    height: 20px;
+    width: 20px;
+    margin: -10px 0 0 -100px;
+}
+.web-link{
+    margin: -6px 100px 0 20px;
+    width: 200px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+}
+.web-link:hover{
+    color: #D12525;
+}
+.email-logo{
+    height: 20px;
+    width: 20px;
+    margin: -10px 0 0 -100px;
+}
+.email-link{
+    margin: -6px 100px 0 20px;
+    width: 200px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    text-decoration: none;
+    position: absolute;
+}
+.email-link:hover{
+    color: #D12525;
+}
+
+/* ANIMATION */
+
+.programming::before{
+    content: '';
+    position: absolute;
+    border: 2px solid black;
+    width: 80%;
+    height: 18px;
+    margin: 26px 0 0 0;
+}
+.programming::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 80%;
+    color: white;
+    border: 2px solid black;
+    height: 18px;
+    margin: 26px 0 0 -125px;
+    animation-name: programming;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+}
+.writing::before{
+    content: '';
+    position: absolute;
+    border: 2px solid black;
+    width: 80%;
+    height: 18px;
+    margin: 26px 0 0 0;
+}
+.writing::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 80%;
+    color: white;
+    border: 2px solid black;
+    height: 18px;
+    margin: 26px 0 0 -210px;
+    animation-name: writing;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+}
+.chess::before{
+    content: '';
+    position: absolute;
+    border: 2px solid black;
+    width: 80%;
+    height: 18px;
+    margin: 26px 0 0 0;
+}
+.chess::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 80%;
+    color: white;
+    border: 2px solid black;
+    height: 18px;
+    margin: 26px 0 0 -130px;
+    animation-name: chess;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+}
+.typing::before{
+    content: '';
+    position: absolute;
+    border: 2px solid black;
+    width: 80%;
+    height: 18px;
+    margin: 26px 0 0 0;
+}
+.typing::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 80%;
+    color: white;
+    border: 2px solid black;
+    height: 18px;
+    margin: 26px 0 0 -105px;
+    animation-name: typing;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+}
+.rubiks::before{
+    content: '';
+    position: absolute;
+    border: 2px solid black;
+    width: 80%;
+    height: 18px;
+    margin: 26px 0 0 0;
+}
+.rubiks::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 80%;
+    color: white;
+    border: 2px solid black;
+    height: 18px;
+    margin: 26px 0 0 -190px;
+    animation-name: rubiks;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+}
+@keyframes programming
+{
+    from{
+        width: 0%;
+    } to{
+        width: 55%;
+    }
+}
+@keyframes writing{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes chess{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 71%;
+    }
+}
+@keyframes typing{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 62%;
+    }
+}
+@keyframes rubiks{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 59%;
+    }
+}
+
+/* EDUCATION */
+
+.education{
+    margin: 30px 0 0 260px;
+    padding: 10px 15px;
+    width: 200px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+}
+.education:hover{
+    color: #D12525;
+    cursor: grab;
+}
+.hr1{
+    border: 2px solid black;
+    width: 52%;
+    background-color: black;
+    color: black;
+    margin: 60px 0 0 295px;
+}
+.hr1:hover{
+    background-color: #D12525;
+    color: #D12525;
+    border: 2px solid #D12525;
+    cursor: grab;
+}
+.box1{
+    background-color: black;
+    height:15px;
+    width: 15px;
+    margin: 82px 0 0 295px;
+    float: left;
+}
+.box1-input{
+    border: 2px solid black;
+    height:80px;
+    width: 368px;
+    margin: 48px 0 0 30px;
+    float: left;
+}
+.box1-input::after{
+    clear: both;
+}
+.box2{
+    background-color: black;
+    height:15px;
+    width: 15px;
+    margin: 27px 0 0 295px;
+    float: left;
+}
+.box2-input{
+    border: 2px solid black;
+    height:35px;
+    width: 368px;
+    margin: 15px 0 0 30px;
+    float: left;
+}
+.box2-input::after{
+    clear: both;
+}
+.box3{
+    background-color: black;
+    height:15px;
+    width: 15px;
+    margin: 35px 0 0 295px;
+    float: left;
+}
+.box3-input{
+    border: 2px solid black;
+    height:55px;
+    width: 368px;
+    margin: 15px 0 0 30px;
+    float: left;
+}
+.box3-input::after{
+    clear: both;
+}
+.box4{
+    background-color: black;
+    height:15px;
+    width: 15px;
+    margin: 26px 0 0 295px;
+    float: left;
+}
+.box4-input{
+    border: 2px solid black;
+    height:35px;
+    width: 368px;
+    margin: 15px 0 0 30px;
+    float: left;
+}
+.box4-input::after{
+    clear: both;
+}
+
+/* EXPERIENCE */
+
+.experience{
+    margin: 374px 0 0 268px;
+    padding: 10px 15px;
+    width: 200px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+}
+.experience:hover{
+    color: #D12525;
+    cursor: grab;
+}
+.hr2{
+    margin: 404px 0 0 295px;
+    border: 2px solid black;
+    width: 52%;
+    background-color: black;
+    color: black;
+}
+.hr2:hover{
+    background-color: #D12525;
+    color: #D12525;
+    border: 2px solid #D12525;
+    cursor: grab;
+}
+.box5{
+    background-color: black;
+    height:15px;
+    width: 15px;
+    margin: 71px 0 0 295px;
+    float: left;
+}
+.box5-input{
+    border: 2px solid black;
+    height:55px;
+    width: 368px;
+    margin: 51px 0 0 30px;
+    float: left;
+}
+.box5-input::after{
+    clear: both;
+}
+.box6{
+    background-color: black;
+    height:15px;
+    width: 15px;
+    margin: 38px 0 0 295px;
+    float: left;
+}
+.box6-input{
+    border: 2px solid black;
+    height:55px;
+    width: 368px;
+    margin: 18px 0 0 30px;
+    float: left;
+}
+.box6-input::after{
+    clear: both;
+}
+
+/* AWARDS */
+
+.awards{
+    margin: 246px 0 0 243px;
+    padding: 10px 15px;
+    width: 200px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+}
+.awards:hover{
+    color: #D12525;
+    cursor: grab;
+}
+.hr3{
+    margin: 276px 0 0 295px;
+    border: 2px solid black;
+    width: 52%;
+    background-color: black;
+    color: black;
+}
+.hr3:hover{
+    background-color: #D12525;
+    color: #D12525;
+    border: 2px solid #D12525;
+    cursor: grab;
+}
+.box7{
+    background-color: black;
+    height:15px;
+    width: 15px;
+    margin: 38px 0 0 295px;
+    float: left;
+}
+.box7-input{
+    border: 2px solid black;
+    height:55px;
+    width: 368px;
+    margin: 15px 0 0 30px;
+    float: left;
+}
+.box7-input::after{
+    clear: both;
+}
+.box8{
+    background-color: black;
+    height:15px;
+    width: 15px;
+    margin: 38px 0 0 295px;
+    float: left;
+}
+.box8-input{
+    border: 2px solid black;
+    height:55px;
+    width: 368px;
+    margin: 18px 0 0 30px;
+    float: left;
+}
+.box8-input::after{
+    clear: both;
+}
+.box9{
+    background-color: black;
+    height:15px;
+    width: 15px;
+    margin: 38px 0 0 295px;
+    float: left;
+}
+.box9-input{
+    border: 2px solid black;
+    height:55px;
+    width: 368px;
+    margin: 18px 0 0 30px;
+    float: left;
+}
+.box9-input::after{
+    clear: both;
+}
+.box1-input h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0.0cm;
+    position: absolute;
+    margin: 8px 0px 0 15px;
+}
+.box1-input h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 52px 0 0 15px;
+}
+.box2-input h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0.0cm;
+    position: absolute;
+    margin: 8px 0px 0 15px;
+}
+.box2-input h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 8.5px 0 0 225px;
+}
+.box3-input h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 370px;
+    letter-spacing: 0.0cm;
+    position: absolute;
+    margin: 8px 0px 0 15px;
+}
+.box3-input h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 30px 0 0 103px;
+}
+.box4-input h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 370px;
+    letter-spacing: 0.0cm;
+    position: absolute;
+    margin: 8px 0px 0 15px;
+}
+.box4-input h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 370px;
+    letter-spacing: 0.0cm;
+    position: absolute;
+    margin: 7px 0px 0 189px;
+}
+.box4-input h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 8px 0 0 200px;
+}
+.box5-input h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 370px;
+    letter-spacing: 0.0cm;
+    position: absolute;
+    margin: 8px 0px 0 15px;
+}
+.box5-input h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 100px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 8.5px 0 0 290px;
+}
+.box5-input h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 100px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 30px 0 0 15px;
+}
+.box6-input h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 370px;
+    letter-spacing: 0.0cm;
+    position: absolute;
+    margin: 8px 0px 0 15px;
+}
+.box6-input h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 8.5px 0 0 262px;
+}
+.box6-input h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 30px 0 0 15px;
+}
+.box7-input h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 370px;
+    letter-spacing: 0.0cm;
+    position: absolute;
+    margin: 8px 0px 0 15px;
+}
+.box7-input h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 29.5px 0 0 120px;
+}
+.box8-input h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 370px;
+    letter-spacing: 0.0cm;
+    position: absolute;
+    margin: 8px 0px 0 15px;
+}
+.box8-input h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 30px 0 0 26px;
+}
+.box8-input h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: bold;
+    margin: 29px 0 0 15px;
+}
+.box9-input h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 370px;
+    letter-spacing: 0.0cm;
+    position: absolute;
+    margin: 8px 0px 0 15px;
+}
+.box9-input h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: 200;
+    margin: 30px 0 0 26px;
+}
+.box9-input h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 350px;
+    letter-spacing: 0cm;
+    position: absolute;
+    font-weight: bold;
+    margin: 29px 0 0 15px;
+}
